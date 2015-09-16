@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sjbit_border"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:shadowColor="#7B1FA2">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+            android:layout_gravity="top"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/var" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+            <com.andexert.library.RippleView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/more"
+                rv_centered="true"
+                android:layout_width="fill_parent"
+
+                android:layout_height="@dimen/abc_action_bar_default_height_material"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/red_yellow_border"
+                android:padding="10dp"
+                app:rv_alpha="90"
+                app:rv_centered="true"
+                app:rv_color="#FFEB3B"
+                app:rv_framerate="10"
+                app:rv_rippleDuration="400"
+                app:rv_type="rectangle">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/abc_action_bar_default_height_material"
+                    android:layout_gravity="center_horizontal|center"
+                    android:background="#F44336"
+                    android:onClick="varchasva"
+                    android:text="Get Into 'VARCHASVA' "
+                    android:textColor="#FFEB3B" />
+            </com.andexert.library.RippleView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

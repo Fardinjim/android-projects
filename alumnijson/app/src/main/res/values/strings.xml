@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Alumni Json</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_alumni_json">AlumniJsonActivity</string>
+    <string name="title_activity_sending_data_to_db">SendingDataToDB</string>
+    <string name="title_activity_alumni_json_using_db">alumniJsonUsingDBActivity</string>
+</resources>

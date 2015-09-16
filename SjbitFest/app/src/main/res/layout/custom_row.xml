@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.andexert.library.RippleView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/more"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:rv_alpha="90"
+    app:rv_framerate="10"
+    app:rv_rippleDuration="12"
+    app:rv_color="#f00"
+    app:rv_centered="true"
+    app:rv_type="doubleRipple"
+
+    android:layout_margin="5dp"
+    rv_centered="true">
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="48dp">
+
+
+
+    <ImageView
+        android:id="@+id/listicon"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/listicon"
+        android:layout_marginLeft="32dp"
+        android:id="@+id/listText"
+        android:layout_centerHorizontal="true"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:text="Dummy Text"
+        android:padding="8dp"/>
+</LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="48dp">
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryText" />
+    </LinearLayout>
+
+    </com.andexert.library.RippleView>

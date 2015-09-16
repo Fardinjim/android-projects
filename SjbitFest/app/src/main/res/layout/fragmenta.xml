@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout
+        android:padding="10dp"
+android:background="@drawable/sjbit_border"
+        android:shadowColor="#7B1FA2"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/shop_sjbit_2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageView2" />
+
+        <TextView
+
+android:layout_marginTop="150dp"
+            android:textColor="#7B1FA2"
+
+            android:textColorHint="#7B1FA2"
+            android:textColorHighlight="#7B1FA2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="WELCOME\nTO\nSJBIT\nFEST"
+            android:textSize="50dp"
+    android:gravity="center"
+    android:id="@+id/textView" />
+
+
+
+    </RelativeLayout>
+    </LinearLayout>

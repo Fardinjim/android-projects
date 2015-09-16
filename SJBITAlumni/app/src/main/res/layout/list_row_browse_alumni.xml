@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="2dp"
+
+    android:layout_marginBottom="13dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <android.support.v7.widget.CardView
+
+
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardBackgroundColor="@color/cardview"
+        card_view:cardElevation="10dp" >
+
+
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_height="fill_parent">
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_height="fill_parent">
+            <sathish.sjbitalumni.Supporting_Files.FadeInNetworkImageView
+                android:id="@+id/alumni_image"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:orientation="vertical"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/alumni_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_weight="1"
+
+                    android:textSize="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/alumni_registerno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+
+                    android:textSize="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/alumni_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+
+                    android:textSize="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/alumni_dept"
+                    android:maxLines="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+
+                    android:textSize="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/alumni_year"
+                    android:maxLines="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+
+           <!--  -->
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="15dp"
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_height="fill_parent">
+                <ImageView
+                    android:id="@+id/call"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/call"/>
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp" />
+                <ImageView
+                    android:id="@+id/addToContact"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/add_to_contacts"/>
+            </LinearLayout>
+
+        </LinearLayout>
+</android.support.v7.widget.CardView>
+
+</LinearLayout>

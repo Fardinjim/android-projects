@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sathish.alumnijson" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".alumnijson.AlumniJsonActivity"
+            android:label="@string/title_activity_alumni_json"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".androidToDb.SendingDataToDB"
+            android:label="@string/title_activity_sending_data_to_db"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".alumnijsonDB.AlumniJsonUsingDBActivity"
+            android:label="@string/title_activity_alumni_json_using_db" >
+        </activity>
+    </application>
+
+</manifest>

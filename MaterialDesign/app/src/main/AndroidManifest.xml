@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sathish.com.materialdesign" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sath"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Subactivity"
+            android:label="@string/title_activity_subactivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".NavigationDrawerFragment"
+            android:label="@string/title_activity_navigation_drawer_fragment" >
+        </activity>
+        <activity
+            android:name=".Tabs"
+            android:label="Tabs" />
+        <activity
+            android:name=".Scrolltab"
+            android:label="@string/title_activity_scrolltab" >
+        </activity>
+        <activity
+            android:name=".Transition1"
+            android:label="@string/title_activity_transition1" >
+        </activity>
+        <activity
+            android:name=".Transition2"
+            android:label=""
+            android:theme="@style/Ttransparent" >
+        </activity>
+        <activity
+            android:name=".Fragment"
+            android:label="@string/title_activity_fragment"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".TabLibrary"
+            android:label="@string/title_activity_tab_library" >
+        </activity>
+        <activity
+            android:name=".TabIcon"
+            android:label="@string/title_activity_tab_icon" >
+        </activity>
+        <activity
+            android:name=".Buttons"
+            android:label="@string/title_activity_buttons" >
+        </activity>
+    </application>
+
+</manifest>

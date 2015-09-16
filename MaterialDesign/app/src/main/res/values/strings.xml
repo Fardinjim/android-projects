@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">MaterialDesign</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="next">Next</string>
+    <string name="title_activity_subactivity">Subactivity</string>
+    <string name="title_activity_navigation_drawer_fragment">NavigationDrawerFragment</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+
+    <string-array name="tabs">
+        <item>TAB 1</item>
+        <item>TAB 2</item>
+        <item>TAB 3</item>
+        <item>TAB 4</item>
+        <item>TAB 5</item>
+        <item>TAB 6</item>
+
+    </string-array>
+
+
+    <string-array name="fragment">
+        <item>fragment1</item>
+        <item>fragment2</item>
+    </string-array>
+
+
+    <string-array name="fragment_des">
+        <item>HI here we areHI here we areHI here we areHI here we areHI here we areHI here we areHI here we areHI here we areHI here we areHI here we areHI here we areHI here we areHI here we areHI here we areHI here we areHI here we areHI here we areHI here we areHI here we areHI here we areHI here we areHI here we are</item>
+        <item>Am in second Am in second Am in second Am in second Am in second Am in second Am in second Am in second Am in second Am in second Am in second Am in second Am in second Am in second Am in second Am in second Am in second Am in second Am in second Am in second Am in second Am in second Am in second Am in second Am in second Am in second Am in second Am in second Am in second Am in second Am in second Am in second Am in second </item>
+    </string-array>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_scrolltab">Scrolltab</string>
+    <string name="title_activity_transition1">Transition1</string>
+    <string name="title_activity_transition2">Transition2</string>
+    <string name="title_activity_fragment">Fragment</string>
+    <string name="title_activity_tab_library">TabLibrary</string>
+    <string name="title_activity_tab_icon">TabIcon</string>
+    <string name="title_activity_buttons">Buttons</string>
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_product_browse"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cardview_background">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <android.support.v4.widget.DrawerLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/drawer_layout"
+        android:layout_below="@+id/app_bar"
+        android:layout_above="@+id/filter_btn"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <!--android:layout_below="@+id/app_bar"-->
+    <android.support.v7.widget.CardView
+
+
+        android:id="@+id/card_view_layout"
+
+
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+
+        card_view:cardBackgroundColor="@color/OrangeRed"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="2dp"
+         >
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <EditText
+                android:textColorHighlight="@color/OrangeRed"
+                android:id="@+id/edittext_search_alumni"
+                android:layout_weight="1"
+
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:inputType="textCapSentences|textMultiLine"
+                android:background="@color/White"
+                android:textColor="@color/Gray"
+                android:hint="  Search Alumni"
+
+                 />
+        <ImageView
+            android:onClick="refresh"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/refresh"
+            />
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
+        android:layout_below="@+id/card_view_layout"
+
+        android:background="@color/cardview_background"
+        android:id="@+id/listView_products"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animationCache="false"
+        android:clipToPadding="false"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_row_selector"
+        android:scrollingCache="false" />
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/fragment_navigation_drawer"
+            android:name="sathish.sjbitalumni.navigation.NavigationDrawerFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:layout="@layout/fragment_navigation_drawer"
+            tools:layout="@layout/fragment_navigation_drawer" />
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+    <LinearLayout
+        android:id="@+id/filter_btn"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="FILTER"
+            android:onClick="filter"
+            android:textColor="@color/filter_button_text"
+
+            android:background="@drawable/button_filter_selector"
+
+            android:padding="5dp"
+
+            />
+
+
+
+    </LinearLayout>
+</RelativeLayout>
